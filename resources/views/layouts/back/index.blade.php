@@ -125,6 +125,10 @@
       <script src="{{asset("assets/back/js/waves.js")}}"></script>
       <!--Menu sidebar -->
       <script src="{{asset("assets/back/js/sidebarmenu.js")}}"></script>
+      <!-- plugins paginas especificas -->
+      @yield('scriptsPlugins')
+      <!-- scripts paginas especificas -->
+      @yield('scripts')
       <!--Custom JavaScript -->
       <script src="{{asset("assets/back/js/custom.min.js")}}"></script>
       <!-- this page js -->
