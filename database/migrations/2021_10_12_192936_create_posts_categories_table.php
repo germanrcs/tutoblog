@@ -17,7 +17,7 @@ class CreatePostsCategoriesTable extends Migration
             $table->unsignedBigInteger('posts_id');
             $table->unsignedBigInteger('categories_id');
             $table->foreign('posts_id', 'fk_postcagegory_post')->references('id')->on('posts')->onDelete('cascade')->onUpdate('restrict');
-            $table->foreign('categories_id', 'fk_postcagegory_category')->references('id')->on('categories')->onDelete('restict')->onUpdate('restrict');
+            $table->foreign('categories_id', 'fk_postcagegory_category')->references('id')->on('categories')->onDelete('restrict')->onUpdate('restrict');
             $table->timestamps();
         });
     }
